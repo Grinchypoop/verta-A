@@ -1042,6 +1042,8 @@
         }
 
         /* ── RESPONSIVE ── */
+
+        /* Tablet */
         @media (max-width: 1024px) {
             .feature-boxes {
                 grid-template-columns: repeat(2, 1fr);
@@ -1062,38 +1064,247 @@
             .team-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-        }
-
-        @media (max-width: 768px) {
-            section {
-                padding: 64px 20px;
-            }
 
             .market-circles-row {
                 gap: 32px;
             }
+        }
 
-            .team-grid {
-                grid-template-columns: 1fr 1fr;
+        /* Mobile */
+        @media (max-width: 768px) {
+            section {
+                padding: 56px 16px;
             }
 
-            .comp-table th, .comp-table td {
-                padding: 12px 14px;
-                font-size: 0.8rem;
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            /* Hero */
+            .hero-logo-img {
+                width: 120px;
+                height: 120px;
             }
 
             .hero-logo-text {
                 font-size: 2.5rem;
             }
 
+            #hero .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-oneliner {
+                font-size: 1rem;
+            }
+
+            .hero-blob { width: 300px; height: 300px; right: -80px; bottom: -80px; }
+            .hero-blob-2 { width: 120px; height: 120px; right: 40px; top: 40px; }
+
+            /* Problem */
+            .problem-item {
+                gap: 14px;
+            }
+
+            .problem-item h3 {
+                font-size: 1rem;
+            }
+
+            /* Solution demo */
+            .demo-flow {
+                gap: 32px;
+                padding: 32px 20px;
+            }
+
+            .cushion-body {
+                width: 160px;
+                height: 100px;
+            }
+
+            .cushion-base {
+                width: 160px;
+                height: 72px;
+                border-radius: 36px;
+            }
+
+            .cushion-top {
+                width: 136px;
+                height: 52px;
+                border-radius: 26px;
+                left: 12px;
+                bottom: 14px;
+            }
+
+            .phone-frame {
+                width: 140px;
+                height: 260px;
+            }
+
+            /* Feature boxes */
             .feature-boxes {
                 grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .feature-box {
+                padding: 22px 18px;
+            }
+
+            /* Competitors table — horizontal scroll */
+            .comp-table-wrapper {
+                margin-left: -16px;
+                margin-right: -16px;
+                padding: 0 16px;
+            }
+
+            .comp-table th, .comp-table td {
+                padding: 10px 12px;
+                font-size: 0.75rem;
+                white-space: nowrap;
+            }
+
+            .comp-sub {
+                display: none;
+            }
+
+            /* Market circles */
+            .market-circles-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 36px;
+            }
+
+            .mcircle-item {
+                max-width: 260px;
+            }
+
+            /* Timeline */
+            .v-timeline {
+                padding-left: 32px;
+            }
+
+            .v-marker {
+                left: -32px;
+            }
+
+            .v-content {
+                padding: 18px 20px;
+            }
+
+            .v-content h3 {
+                font-size: 1rem;
+            }
+
+            /* Revenue tree */
+            .tree-branches {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+            }
+
+            .tree-root-label {
+                font-size: 0.9rem;
+                padding: 12px 24px;
+            }
+
+            /* Line chart */
+            .line-chart-wrapper {
+                padding: 24px 16px;
+            }
+
+            .chart-x-axis {
+                font-size: 0.7rem;
+            }
+
+            /* Team */
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .team-card {
+                padding: 24px 14px;
+            }
+
+            .team-avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 1.4rem;
+            }
+
+            /* CTA */
+            #cta {
+                padding: 56px 16px;
+            }
+
+            #cta .section-title {
+                font-size: 1.8rem;
             }
         }
 
+        /* Small phone */
         @media (max-width: 480px) {
+            .hero-logo-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .hero-logo-text {
+                font-size: 2rem;
+            }
+
+            #hero .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
             .team-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .mcircle-lg, .mcircle-lg svg { width: 150px; height: 150px; }
+            .mcircle-md, .mcircle-md svg { width: 130px; height: 130px; }
+            .mcircle-sm, .mcircle-sm svg { width: 110px; height: 110px; }
+
+            .mcircle-value { font-size: 1.5rem; }
+            .mcircle-md .mcircle-value { font-size: 1.3rem; }
+            .mcircle-sm .mcircle-value { font-size: 1.1rem; }
+
+            .demo-flow {
+                padding: 24px 16px;
+                gap: 28px;
+            }
+
+            .cushion-body {
+                width: 140px;
+                height: 90px;
+            }
+
+            .cushion-base {
+                width: 140px;
+                height: 64px;
+                border-radius: 32px;
+            }
+
+            .cushion-top {
+                width: 120px;
+                height: 46px;
+                border-radius: 22px;
+                left: 10px;
+                bottom: 12px;
+            }
+
+            .phone-frame {
+                width: 120px;
+                height: 220px;
+                border-radius: 22px;
+                padding: 10px 8px;
             }
         }
     </style>
